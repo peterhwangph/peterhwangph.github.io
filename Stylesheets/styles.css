@@ -3,13 +3,15 @@
 }
 
 body {
-  /* background-color: #7c85bf !important; */
+  background-color: #2F2F2F !important;
   margin: auto;
   overflow: auto;
+  /*
   background: linear-gradient(315deg, #747ebc, #7c85bf 60%, #757fbe 80%); 
   animation: gradient 10s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
+  */
 }
 
 @keyframes gradient {
@@ -27,7 +29,7 @@ body {
 /* Typewriter Effect */
 .typewriter {
   overflow: hidden;
-  border-right: .15em solid rgb(255, 255, 255);
+  border-right: .1em solid rgb(255, 255, 255);
   white-space: nowrap;
   animation: 
     typing 4s steps(40, end),
@@ -50,11 +52,11 @@ body {
 .return {
   transition: all 0.25s ease-in-out;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 2.5vh;
+  left: 1vh;
   display: inline-flex;
-  width: 10%;
-  opacity: 50%;
+  width: 5%;
+  opacity: 25%;
 }
 
 /* NAVBAR */
@@ -65,40 +67,46 @@ body {
 }
 
 .button {
-  background-color: white !important;
+  background-color: rgba(50, 255, 0, 0.1) !important;
   border: none;
   padding: 10px 25px;
   text-align: center;
   margin: 4px 2px;
   cursor: pointer;
   font-size: 16px;
-  color: rgb(45, 45, 80);
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   width: 25%;
 }
 
-.button:hover {
-  color: rgb(25, 25, 80) !important;
+/* INTRO, PARTICLES */
+.intro {
+  position: relative;
+  z-index: 1;
+  margin-top: 12.5vh;
+  margin-bottom: 10vh;
 }
 
-/* INTRO */
-#particles-js {
-  position: relative;
-  width: 100%;
+canvas {
+  height: 100%;
+  position: absolute;
   z-index: 0;
-  margin-top: 25vh;
-  margin-bottom: 50vh;
 }
 
 /* ABOUT, EXPERIENCE, PROJECTS */
+h4 {
+  text-align: center;
+}
+
 .anchor {
   position: relative;
   visibility: hidden;
 }
 
 .aboutme, .experience, .projects {
-  margin-top: 15vh;
-  margin-bottom: 25vh;
+  position: relative;
+  margin-top: 12.5vh;
+  margin-bottom: 10vh;
 }
 
 .row, .bottom {
@@ -116,11 +124,11 @@ h1, h3, h4, h5 {
 }
 
 li, h6, p, a {
-  color: rgba(0, 0, 0, 100%) !important;
+  color: rgb(255, 255, 255) !important;
   font-size: 14px;
 }
 
 a:hover {
-  color: rgb(25, 25, 80) !important;
+  color: rgb(210, 210, 100) !important;
 }
 

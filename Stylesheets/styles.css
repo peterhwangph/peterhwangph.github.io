@@ -52,11 +52,11 @@ body {
 .return {
   transition: all 0.25s ease-in-out;
   position: fixed;
-  bottom: 2.5vh;
-  left: 1vh;
+  bottom: 5vh;
+  left: 2.5vh;
   display: inline-flex;
   width: 5%;
-  opacity: 25%;
+  z-index: 2;
 }
 
 /* NAVBAR */

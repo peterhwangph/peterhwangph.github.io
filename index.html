@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Peter C. Hwang</title>
+    <!-- Tab Icon -->
+    <link rel="icon" href="Images/Icon.png">
+    
+    <link rel="stylesheet" href="Stylesheets/styles.css" />
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- BOOTSTRAP CSS/JS SCRIPTS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- PARTICLES.JS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      // Check if Particles.js loaded
+      particlesJS.load("particles-js", "particles.json", function() {
+        console.log("callback - particles.json config loaded");
+      });
+    </script>
+
+    <!-- SCRIPT for taking user back to the top of the page -->
+    <script>
+      let mybutton = document.getElementById("navbar-brand");
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+    <!-- <a name="top"></a> -->
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-sm" style="background-color: rgba(255, 255, 255, 15%); backdrop-filter: blur(10px);">
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li><a class="navbar-brand" id="navbar-brand" href="#top">Peter...</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Images/Resume.pdf" target="_blank">Resumé</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- INTRO -->
+    <div class="container" id="particles-js">
+      <div class="container intro" id="intro" data-aos="zoom-in" data-aos-duration="3000" style="position: absolute;">
+        <div class="row">
+          <div>
+            <h1 style="padding-top: 5rem">Hi, my name is <strong>Peter Hwang</strong></h1>
+            <h3>Welcome to my Portfolio</h3>
+            <br>
+            <a class="button" href="#about">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="container aboutme" id="about" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
+      <div class="row" style="margin: 0">
+        <div class="colum-1" style="display: inline-block; width: 60%;">
+          <!-- LABEL -->
+          <div>
+            <h4><strong><u>About me</u></strong></h4>
+          </div>
+          <br>
+          <!-- LIST -->
+          <div>
+            <h5><strong>Professional Interests</strong></h5>
+            <div id="professional">
+              <p>I graduated from the University of Maryland in 2023 with a <strong>Bachelor of Science in Computer Science, Statistics, and Mechanical Engineering</strong>.</p>
+              <p>I have previous work experience at Textron Systems as a summer software engineering intern, primarily creating an application to append to 
+                my team's internal tools for full-motion video and imagery analysis and exploitation, while developing a localized deployment feature for 
+                fielded products for debugging and demonstration purposes. My work involved full-stack development and work with AWS Lambda, Postman, and Docker.</p>
+              <p>I am currently interested in <strong>backend or full stack development, with a stronger preference for the former</strong>. I do not have much experience in machine
+                learning or data science, but I would love to learn about and gain hands-on experience in these fields! I am a responsible and efficient 
+                worker, as well as a fast learner.</p>
+            </div>
+          </div>
+          <br>
+
+          <div>
+            <h5><strong>Personal Interests</strong></h5>
+            <div id="personal">
+              <p>In my free time, I enjoy exploring artistic and creative outlets, or simply admiring the genius of other creatives, be it through music, photography, or art. I hope to find a happy
+                medium between the academic and creative sides of my mind, and create work that exhibits this. I also love listening to music, so Spotify analytics have become of huge interest to me. I am currently in the process of
+                creating a Spotify application that analyzes a user's listening history!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column-2">
+          <img class="headshot" src="Images/Headshot.png" style="width: 100%; padding-left: 3rem; padding-top: 5rem;">
+        </div>
+        <br>
+      </div>
+
+      <div class="bottom">
+        <h5><strong>Skills and Certifications</strong></h5>
+        <div id="skills">
+          <p><strong>Programming Skills: </strong>Java, Python, C++, SQL, Kotlin, XML, JavaScript, HTML, CSS</p>
+          <p><strong>Technologies: </strong>Postman, Docker, Git, PostgreSQL, Bootstrap, Express.js, Nest.js, Cloudinary, MongoDB</p>
+          <p><strong>Certifications: </strong>AWS Certified Cloud Practitioner (In Progress), Microsoft Certified Azure Fundamentals (In Progress)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="container experience" id="experience" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
+      <div class="row" style="margin: 0; display: inline-block;">
+        <!-- LABEL -->
+        <div>
+          <h4><strong><u>Where I've worked</u></strong></h4>
+        </div>
+        <br>
+        <!-- LIST -->
+        <h5><strong>UMD Computational Research Lab</strong></h5>
+        <p><strong>Undergraduate Resaerch Assistant</strong></p>
+        <p>Sep. 2023 - Present</p>
+        <div id="comp_swe">
+          <ul>
+            <li>Automating simulation for pharmecutical testing procedures and data analyses for exothermic compositions to develop a state of equation model using SQL, MongoDB, and Python scripts in a Linux Environment to reduce processing times by 36%  </li>
+            <li>In progress...</li>
+          </ul>
+        </div>
+        <br>
+      
+        <h5><strong>Textron Systems: Imagery and Data Analysis</strong></h5>
+        <p><strong>Software Engineering Intern</strong></p>
+        <p>May 2022 - Aug. 2022</p>
+        <div id="textron_va">
+          <ul>
+            <li>Streamlined initialization of NestJS webpage application using configuration files to identify available stream endpoints</li>
+            <li>Integrated AngularJS components to webpages using TypeScript and HTML to display status of stream query requests and live
+              metrics of local machines</li>
+            <li>Utilized MongoDB and Docker to store stream query submissions and reduced processing time for query results</li>
+            <li>Implemented AWS Lambda and RESTful API using Flask to dynamically update MongoDB table with appropriate query status and
+              results from external metadata streams</li>
+          </ul>
+        </div>
+        <br>
+
+        <h5><strong>UMD Department of Computer Science</strong></h5>
+        <p><strong>Undergraduate Teaching Assistant</strong></p>
+        <p>Jan. 2021 - May 2022</p>
+
+        <div id="cmsc_ta">
+          <ul>
+            <li>Facilitated students’ fundamental knowledge of object-oriented programming and data structures in Java</li>
+            <li>Enhanced students’ problem-solving skills with heuristic techniques during office hours and discussions</li>
+          </ul>
+        </div>
+        <br>
+      
+        <h5><strong>Textron Systems: Electronic Systems</strong></h5>
+        <p><strong>Systems Engineering Intern</strong></p>
+        <p>May 2021 - Aug. 2021</p>
+        <div id="textron_md">
+          <ul>
+            <li>Refactored and integrated data analysis application with calibration processes using C# to reduce duration of system testing</li>
+            <li>Parsed through 500TB of data logs per system calibration and reported analysis results to engineers during customer compliance
+              troubleshooting</li>
+            <li>Consulted with customers to conduct requirement analyses and derived system architecture models and acceptance test procedures</li>
+          </ul>
+        </div>
+        <br>
+
+        <h5><strong>UMD Quantitative Control and Optimization Lab</strong></h5>
+        <p><strong>Undergraduate Resaerch Assistant</strong></p>
+        <p>Jan. 2021 - May 2021</p>
+
+        <div id="control_swe">
+          <ul>
+            <li>Developed a responsive and dynamic webpage using JavaScript to enable easy access to laboratory publication library,
+              communication portal and research overview</li>
+            <li>Analyzed parameter sensitivities of multi-dimensional physics models using Python scripts that identified optimal underlying model
+              parameters</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="container projects" id="projects" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
+      <div class="row" style="margin: 0; display: inline-block;">
+        <div>
+          <h4><strong><u>What I've worked on</u></strong></h4>
+        </div>
+        <br>
+      <!-- LIST -->
+          <p><strong>Investment Calculator</strong></p>
+          <div id="calculator">
+            <p>An application that calculates a projected capital gain using parameters given by the users such as: rate of interest, accumulation duration,
+              compound frequency, and initial deposit. The user can also compare different financial senerios to determine which decision is the most effective.</p>
+            <p>Languages: HTML, CSS, Javascript</p>
+          </div>
+          <br>
+        
+          <p><strong>COVID-19 Visualization</strong></p>
+          <div id="visual">
+            <p>In the midst of the rapid spreaing COVID-19 pandemic, I decided to develop an intuitive user interface that autonomously pulls data from an open disease data API (disease.sh) and presents
+              a visualization of the current state of individual countries with respect to their active known COVID-19 cases.</p>
+            <p>Languages: HTML, CSS, Javascript</p>
+          </div>
+          <br>
+
+          <p><strong>Facial Recognition Model</strong></p>
+          <div id="model">
+            <p>The facial recognition model was a project developed using NumPy where an algorithm, that was derivated from a set of over 3500 images using principal component
+              analysis and support vector machine decompotion, was developed and trained. After numerous parameter modifications, I was able to acheive a resulting accuracy of approximately 86%.</p>
+            <p>Languages: Python</p>
+          </div>
+          <br>
+
+          <p><strong>Coronavirus Purity Test</strong></p>
+          <div id="coronapuritytest">
+            <p>The Coronavirus Purity Test is inspired by the Rice Purity Test (an activity list questionnaire that gives you a score out of 100, deducting one point per activity that you have done) but with a
+              twist. Given the 2020 COVID-19 pandemic, I decided to create a fun way for people to gauge how well they've been staying safe throughout quarantine.</p>
+            <p>Languages: HTML, CSS, Javascript</p>
+          </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div class="container contact" id="contact">
+      <div>
+        <h4>Wanna chat?</h4>
+        <h6>I would love to connect with you!</h6>
+        <br />
+        <a class="button" href="mailto:peterhwang.ph@gmail.com">Email me</a>
+      </div>
+    </div>
+    <hr>
+
+    <!-- FOOTER -->
+    <div class="container footer" id="footer">
+      <div>
+        <a href="https://github.com/peterhwangph" target="_blank"
+          ><img src="Images/GitHub-Mark-Light-32px.png"
+        />
+      </a>
+        <a href="https://linkedin.com/in/peterhwang0225" target="_blank"
+          ><img src="Images/linkedin-4-32.png"
+        />
+      </a>
+      </div>
+      <br>
+      <p>Here's some more stuff</p>
+    </div>
+  </body>
+</html>
+
+<script>
+  AOS.init();
+</script>

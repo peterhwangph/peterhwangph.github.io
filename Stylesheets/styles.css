@@ -1,0 +1,106 @@
+* {
+  font-family: Helvetica Neue;
+}
+
+body {
+  background-color: #7c85bf !important;
+  margin: auto;
+  overflow: auto;
+  /* background: linear-gradient(315deg, #7c85bf, #7d8cef 60%, #7983c4 80%); 
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* NAVBAR */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.button {
+  background-color: white !important;
+  border: none;
+  padding: 10px 25px;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(45, 45, 80);
+  border-radius: 10px;
+  width: 25%;
+}
+
+.button:hover {
+  color: rgb(25, 25, 80) !important;
+}
+
+.navbar-brand {
+  margin-right: 0.15rem !important;
+}
+
+/* INTRO */
+#particles-js {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  margin-top: 40rem;
+  margin-bottom: 50rem;
+}
+
+/* ABOUT, EXPERIENCE, PROJECTS */
+.aboutme, .experience, .projects {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+
+.row, .bottom {
+  width: 100%;
+}
+
+.column-2 {
+  display: inline-block;
+  width: 40%;
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+/* TEXT-FONT */
+h1, h3, h4, h5 {
+  color: rgb(255, 255, 255);
+}
+
+li, h6, p, a {
+  color: rgba(0, 0, 0, 100%) !important;
+  font-size: 14px;
+}
+
+a:hover {
+  color: rgb(25, 25, 80) !important;
+}
+

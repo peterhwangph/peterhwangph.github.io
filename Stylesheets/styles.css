@@ -24,6 +24,17 @@ body {
   }
 }
 
+/* RETURN BUTTON */
+.return {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  width: 10%;
+  opacity: 50%;
+}
+
 /* NAVBAR */
 @keyframes blink {
   50% {
@@ -48,23 +59,24 @@ body {
   color: rgb(25, 25, 80) !important;
 }
 
-.navbar-brand {
-  margin-right: 0.15rem !important;
-}
-
 /* INTRO */
 #particles-js {
   position: relative;
   width: 100%;
   z-index: 0;
-  margin-top: 40rem;
-  margin-bottom: 50rem;
+  margin-top: 25vh;
+  margin-bottom: 50vh;
 }
 
 /* ABOUT, EXPERIENCE, PROJECTS */
+.anchor {
+  position: relative;
+  visibility: hidden;
+}
+
 .aboutme, .experience, .projects {
-  margin-top: 15rem;
-  margin-bottom: 10rem;
+  margin-top: 15vh;
+  margin-bottom: 25vh;
 }
 
 .row, .bottom {
@@ -74,20 +86,6 @@ body {
 .column-2 {
   display: inline-block;
   width: 40%;
-}
-
-/* CONTACT */
-.contact {
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  text-align: center;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 5rem;
 }
 
 /* TEXT-FONT */

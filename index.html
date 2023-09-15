@@ -3,7 +3,7 @@
   <head>
     <title>Peter C. Hwang</title>
     <!-- Tab Icon -->
-    <link rel="icon" href="Images/Icon.png">
+    <link rel="icon" href="Resources/Icon.png">
     
     <link rel="stylesheet" href="Stylesheets/styles.css" />
     <meta charset="utf-8" />
@@ -53,7 +53,7 @@
   </head>
 
   <body>
-    <a href="" id="return"><img src="/Images/Up.png" class="return"></a>
+    <a href="" id="return"><img src="/Resources/Up.png" class="return"></a>
 
       <!-- NAVBAR -->
       <nav class="navbar fixed-top navbar-expand-sm" style="background-color: rgba(50, 255, 0, 0.1); backdrop-filter: blur(10px);">
@@ -72,7 +72,7 @@
               <a class="nav-link" href="#communication">Contact</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link" href="Images/Resume.pdf" target="_blank">Resumé</a>
+              <a class="nav-link" href="Resources/Resume.pdf" target="_blank">Resumé</a>
             </li>
           </ul>
         </div>
@@ -128,7 +128,7 @@
             </div>
 
             <div class="column-2">
-              <img class="headshot" src="Images/Headshot.png" style="width: 100%; padding-left: 3rem; padding-top: 5rem;">
+              <img class="headshot" src="Resources/Headshot.png" style="width: 100%; padding-left: 3rem; padding-top: 5rem;">
             </div>
             <br>
           </div>
@@ -137,7 +137,7 @@
             <h5><strong>Skills and Certifications</strong></h5>
             <div id="skills">
               <p><strong>Programming Skills: </strong>Java, Python, C++, SQL, Kotlin, XML, JavaScript, HTML, CSS</p>
-              <p><strong>Technologies: </strong>Postman, Docker, Git, PostgreSQL, Bootstrap, Express.js, Nest.js, Cloudinary, MongoDB</p>
+              <p><strong>Technologies: </strong>Postman, Docker, Git, MySQL, PostgreSQL, Cloudinary, MongoDB, Bootstrap, ExpressJS, ReactJS</p>
               <p><strong>Certifications: </strong>AWS Certified Cloud Practitioner (In Progress), Microsoft Certified Azure Fundamentals (In Progress)</p>
             </div>
           </div>
@@ -149,7 +149,7 @@
           <div class="row" style="margin: 0; display: inline-block;">
             <!-- LABEL -->
             <div>
-              <h4><strong><u>Where I've worked</u></strong></h4>
+              <h4><strong><u>What I've been up to</u></strong></h4>
             </div>
             <br>
             <!-- LIST -->
@@ -158,7 +158,8 @@
             <p>Sep. 2023 - Present</p>
             <div id="comp_swe">
               <ul>
-                <li>•	Automating pharmaceutical testing simulation and data analyses for exothermic compositions to develop a state of equation model funded by the Department of Defense using SQL, MongoDB, and Python scripts in a Linux environment to reduce processing times by 36%</li>
+                <li>Automated simulation parameter entries, test analyses, and data exportations using Python, and Bash queries in a Linux environment to streamline manual components while reduce processing times by 56%</li>
+                <li>Analyzing parameter sensitivities of exothermic compositions to developing state of equation models for the Department of Defense with pharmaceutical mythologies using Python, R, MySQL, and MongoDB</li>
               </ul>
             </div>
             <br>
@@ -169,11 +170,9 @@
             <div id="textron_va">
               <ul>
                 <li>Streamlined initialization of NestJS webpage application using configuration files to identify available stream endpoints</li>
-                <li>Integrated AngularJS components to webpages using TypeScript and HTML to display status of stream query requests and live
-                  metrics of local machines</li>
+                <li>Integrated AngularJS components to webpages using TypeScript and HTML to monitor query requests and live metrics of local machines</li>
                 <li>Utilized MongoDB and Docker to store stream query submissions and reduced processing time for query results</li>
-                <li>Implemented AWS Lambda and RESTful API using Flask to dynamically update MongoDB table with appropriate query status and
-                  results from external metadata streams</li>
+                <li>Implemented AWS Lambda and RESTful API using Flask to dynamically update MongoDB table with appropriate query status and results from external metadata streams</li>
               </ul>
             </div>
             <br>
@@ -196,8 +195,7 @@
             <div id="textron_md">
               <ul>
                 <li>Refactored and integrated data analysis application with calibration processes using C# to reduce duration of system testing</li>
-                <li>Parsed through 500TB of data logs per system calibration and reported analysis results to engineers during customer compliance
-                  troubleshooting</li>
+                <li>Parsed through 500TB of data logs per system calibration and reported analysis results to engineers during customer compliance troubleshooting</li>
                 <li>Consulted with customers to conduct requirement analyses and derived system architecture models and acceptance test procedures</li>
               </ul>
             </div>
@@ -209,10 +207,8 @@
 
             <div id="control_swe">
               <ul>
-                <li>Developed a responsive and dynamic webpage using JavaScript to enable easy access to laboratory publication library,
-                  communication portal and research overview</li>
-                <li>Analyzed parameter sensitivities of multi-dimensional physics models using Python scripts that identified optimal underlying model
-                  parameters</li>
+                <li>Developed a responsive and dynamic webpage using JavaScript to enable easy access to laboratory publication library, communication portal and research overview</li>
+                <li>Analyzed parameter sensitivities of multi-dimensional physics models using Python scripts that identified optimal underlying model parameters</li>
               </ul>
             </div>
           </div>
@@ -224,41 +220,45 @@
         <div class="container projects" id="projects" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out" style="margin-bottom: 2.5vh !important;">
           <div class="row" style="margin: 0; display: inline-block;">
             <div>
-              <h4><strong><u>What I've worked on</u></strong></h4>
+              <h4><strong><u>Here are some of my projects</u></strong></h4>
             </div>
             <br>
           <!-- LIST -->
-              <p><strong>Investment Calculator</strong></p>
+              <p><strong>Memory Mosaic (In Progress)</strong></p>
               <div id="calculator">
-                <p>An application that calculates a projected capital gain using parameters given by the users such as: rate of interest, accumulation duration,
-                  compound frequency, and initial deposit. The user can also compare different financial senerios to determine which decision is the most effective.</p>
-                <p>Languages: HTML, CSS, Javascript</p>
-              </div>
-              <br>
-            
-              <p><strong>COVID-19 Visualization</strong></p>
-              <div id="visual">
-                <p>In the midst of the rapid spreaing COVID-19 pandemic, I decided to develop an intuitive user interface that autonomously pulls data from an open disease data API (disease.sh) and presents
-                  a visualization of the current state of individual countries with respect to their active known COVID-19 cases.</p>
-                <p>Languages: HTML, CSS, Javascript</p>
+                <p style="margin-bottom: 0.5vh;">Developed a photo archiving application in which users can store, retrieve, update, and delete memories via a cloud-based database</p>
+                <p>Technologies: PostgreSQL, Cloudinary, JavaScript</p>
               </div>
               <br>
 
-              <p><strong>Facial Recognition Model</strong></p>
+              <p><strong>Currency Flow</strong></p>
+              <div id="calculator">
+                <p style="margin-bottom: 0.5vh;">Created an ExpressJS webpage application where users can conveniently conduct international currency conversions using Fixer API while monitoring user demographics through dynamically updating MongoDB tables</p>
+                <p style="margin-bottom: 0.5vh;">Technologies: Fixer API, MongoDB, HTML, CSS, JavaScript</p>
+                <a href="url(https://github.com/peterhwangph/currencyflow)">View Code</a>
+              </div>
+              <br>
+
+              <p><strong>Capital Wise</strong></p>
+              <div id="calculator">
+                <p style="margin-bottom: 0.5vh;">Created a webpage that implements non-linear regression models to calculate projected capital gains from personal investments</p>
+                <p>Technologies: HTML, CSS, AngularJS, PHP, SQL</p>
+              </div>
+              <br>
+
+              <p><strong>Stock Predictor</strong></p>
               <div id="model">
-                <p>The facial recognition model was a project developed using NumPy where an algorithm, that was derivated from a set of over 3500 images using principal component
-                  analysis and support vector machine decompotion, was developed and trained. After numerous parameter modifications, I was able to acheive a resulting accuracy of approximately 86%.</p>
-                <p>Languages: Python</p>
+                <p style="margin-bottom: 0.5vh;">Used a RNN (Recurrent Neural Network) model to predict the stock return of Tesla stocks</p>
+                <p>Technologies: YFinance API, Tensorflow, Python, NumPy, Pandas, Matplotlib</p>
               </div>
               <br>
 
               <p><strong>Coronavirus Purity Test</strong></p>
               <div id="coronapuritytest">
-                <p>The Coronavirus Purity Test is inspired by the Rice Purity Test (an activity list questionnaire that gives you a score out of 100, deducting one point per activity that you have done) but with a
+                <p style="margin-bottom: 0.5vh;">The Coronavirus Purity Test is inspired by the Rice Purity Test (an activity list questionnaire that gives you a score out of 100, deducting one point per activity that you have done) but with a
                   twist. Given the 2020 COVID-19 pandemic, I decided to create a fun way for people to gauge how well they've been staying safe throughout quarantine.</p>
-                <p>Languages: HTML, CSS, Javascript</p>
+                <p>Technologies: HTML, CSS, Javascript</p>
               </div>
-
         </div>
         
         <span class="anchor" id="communication">This is where the anchor is....</span>
@@ -277,11 +277,11 @@
         <div class="container footer" id="footer" style="text-align: center;">
           <div>
             <a href="https://github.com/peterhwangph" target="_blank"
-              ><img src="Images/GitHub-Mark-Light-32px.png"
+              ><img src="Resources/GitHub-Mark-Light-32px.png"
             />
           </a>
             <a href="https://linkedin.com/in/peterhwang0225" target="_blank"
-              ><img src="Images/linkedin-4-32.png"
+              ><img src="Resources/linkedin-4-32.png"
             />
           </a>
           </div>

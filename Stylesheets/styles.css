@@ -123,12 +123,12 @@ h1, h3, h4, h5 {
   color: rgb(255, 255, 255);
 }
 
-li, h6, p, a {
+li, h6, p, a, .links {
   color: rgb(255, 255, 255) !important;
   font-size: 14px;
 }
 
-a:hover {
+a:hover, links:hover {
   color: rgb(210, 210, 100) !important;
 }
 
